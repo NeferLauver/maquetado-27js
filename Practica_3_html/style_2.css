@@ -1,0 +1,111 @@
+  /* @descargar fuente , crear carpeta  src: url  */
+@font-face {
+    font-family:"Red-hat";
+    src: url(./Letter_styles/RedHatDisplay-VariableFont_wght.ttf);
+}
+
+/* * selector universal : todo mi contenido tendra ese formato  */
+* {
+    font-family: Red-hat;
+    text-align: center;
+    text-decoration: none;
+    /* color: hsl(223, 47%, 23%) */
+}
+
+
+.Principal__title--1 {
+    font-weight: 900;
+    font-weight: bolder;
+}
+
+body {
+    height: 900px;
+    background-image: url(./Imagenes/background.file.svg);
+    /* no-repeat para que al movimiento no se vea feo */
+    background-repeat: no-repeat;
+    /* contain para extender imagen en toda la pantalla independientemente del dispositivo */
+    background-size: contain;
+    background-color: hsl(225, 100%, 94%);
+/* ayuda a mover objetos en todo el body que es toda mi pantalla */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.principal__file {
+    background-color: hsl(0, 0%, 100%);
+    width: 400px;
+    border-radius: 25px;
+}
+
+#background img {
+    width: 100%;
+    border-radius: 25px 25px 0px 0px;
+}
+
+.contenido__text--title {
+    font-size: 18px;
+    padding: 0px 70px;
+    margin-top: 30px;
+}
+
+.shopping__view {
+    /* para mover musica, pago y change , display ,justify, align */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: hsl(225, 100%, 98%);
+    width: 85%;
+    /* para mover la imagen un poco n,s,e,o margin */
+    margin: 10px 10px 20px 30px;
+    /* para bajar la imagen margin-top */
+    margin-top: 50px;
+    border-radius: 10px;
+  
+}
+
+.shopping__view > img {
+    width: 50px;
+    
+}
+
+.Plan__prices {
+    margin-left: -40px;
+    margin-top: -8px;
+}
+
+.Plan__prices > h4 {
+    margin-bottom: -15px;
+}
+
+.shopping__view > a:hover {
+    color: rgb(118, 75, 246);
+    font-weight: 500;
+}
+.payment__button {
+    background-color:  rgb(118, 75, 246);
+    color: rgb(255, 255, 255);
+    width: 85%;
+    padding: 10px;
+    border-radius: 10px;
+    border-color: rgb(118, 75, 246);
+   
+}
+
+.payment__button:hover{
+/* box shadow N,S,E,O */
+    box-shadow: 1px 1px 12px -3px rgb(55, 24, 95);
+}
+
+.button__cancel {
+    font-size: 12px;
+    padding: 7px;
+    
+}
+
+.button__cancel:hover{
+    font-weight: 3000;
+    color: red;
+    
+}
